@@ -1,5 +1,6 @@
 FROM alpine
 RUN apk add --update \
+	tzdata \
 	python3
 RUN mkdir -p /root/.local/share
 RUN rm -rf /var/cache/apk/*
