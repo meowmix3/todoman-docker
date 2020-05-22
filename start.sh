@@ -3,7 +3,7 @@ docker stop todoman
 docker rm todoman
 mkdir {config,data}
 docker build -t todoman . && \
-docker run -d \
+docker run -td \
   --name=todoman \
   -u 1000:1000 \
   -e TZ=America/New_York \
